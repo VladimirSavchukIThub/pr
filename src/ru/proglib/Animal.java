@@ -1,5 +1,4 @@
 package ru.proglib;
-// запускать ru.proglib.Animal
 public class Animal {
     int voice;
     int speed;
