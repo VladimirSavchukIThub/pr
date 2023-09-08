@@ -10,7 +10,7 @@ public class Animal {
         this.voice = voice;
         System.out.println("Объект готов");
     }
-    void sound(){
+    public void sound(){
         if(voice % 2 == 0){
             System.out.println("Лает");
         }
@@ -18,23 +18,15 @@ public class Animal {
             System.out.println("Молчит");
         }
     }
-    void count(){
+    public void count(){
         System.out.println(countOfPaws);
     }
-    void start(){
+    public void start(){
         System.out.println("Начинает бежать");
         System.out.println("Скорость: " + speed);
     }
-    void stop(){
+    public void stop(){
         System.out.println("Останавливается");
         System.out.println("Скорость была " + speed);
-    }
-    public static void main(String[] args) {
-        var myAn = new Animal(15,4, 2);
-        myAn.start();
-        myAn.stop();
-        System.out.print("Кол-во лап:");
-        myAn.count();
-        myAn.sound();
     }
 }
