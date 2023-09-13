@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
-        System.out.println("Введите скорость: ");
+        System.out.println("Enter speed");
         int a = myObj.nextInt();
-        System.out.println("Введите количество лап: ");
+        System.out.println("Enter number of paws");
         int b = myObj.nextInt();
-        System.out.println("Введите любое число: ");
+        System.out.println("Enter random number(voice)");
         int c = myObj.nextInt();
         var myAn = new Animal(a,b, c);
         myAn.start();
